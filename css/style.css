@@ -1,0 +1,1826 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  max-width: 1200px !important;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  -webkit-mask-position: center;
+  background-color: #2d3a45;
+  vertical-align: middle;
+}
+
+.icon-sms {
+  mask-image: url("../img/svg/sms.svg");
+  -webkit-mask-image: url("../img/svg/sms.svg");
+  background-color: #5f5f5f;
+  width: 35px;
+  height: 35px;
+}
+
+.icon-phone {
+  mask-image: url("../img/svg/phone.svg");
+  -webkit-mask-image: url("../img/svg/phone.svg");
+  background-color: #5f5f5f;
+  width: 35px;
+  height: 35px;
+}
+.icon-flat {
+  mask-image: url("../img/svg/flat.svg");
+  -webkit-mask-image: url("../img/svg/flat.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-house {
+  mask-image: url("../img/svg/house.svg");
+  -webkit-mask-image: url("../img/svg/house.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-cottages {
+  mask-image: url("../img/svg/cottages.svg");
+  -webkit-mask-image: url("../img/svg/cottages.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-dryCleaning {
+  mask-image: url("../img/svg/dryCleaning.svg");
+  -webkit-mask-image: url("../img/svg/dryCleaning.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-cleaningOffice {
+  mask-image: url("../img/svg/cleaningOffice.svg");
+  -webkit-mask-image: url("../img/svg/cleaningOffice.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-cleaningRestaurant {
+  mask-image: url("../img/svg/cleaningRestaurant.svg");
+  -webkit-mask-image: url("../img/svg/cleaningRestaurant.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-cleaningSchool {
+  mask-image: url("../img/svg/cleaningSchool.svg");
+  -webkit-mask-image: url("../img/svg/cleaningSchool.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-cleaningCinema {
+  mask-image: url("../img/svg/cleaningCinema.svg");
+  -webkit-mask-image: url("../img/svg/cleaningCinema.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-profitable1 {
+  mask-image: url("../img/svg/profitable1.svg");
+  -webkit-mask-image: url("../img/svg/profitable1.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-profitable2 {
+  mask-image: url("../img/svg/profitable2.svg");
+  -webkit-mask-image: url("../img/svg/profitable2.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-profitable3 {
+  mask-image: url("../img/svg/profitable3.svg");
+  -webkit-mask-image: url("../img/svg/profitable3.svg");
+  background-color: #ffffff;
+  width: 34px;
+  height: 40px;
+}
+.icon-profitable4 {
+  mask-image: url("../img/svg/profitable4.svg");
+  -webkit-mask-image: url("../img/svg/profitable4.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-profitable5 {
+  mask-image: url("../img/svg/profitable5.svg");
+  -webkit-mask-image: url("../img/svg/profitable5.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-profitable6 {
+  mask-image: url("../img/svg/profitable6.svg");
+  -webkit-mask-image: url("../img/svg/profitable6.svg");
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.icon-collapseArrow {
+  mask-image: url("../img/svg/collapseArrow.svg");
+  -webkit-mask-image: url("../img/svg/collapseArrow.svg");
+  background-color: #ffffff;
+  width: 18px;
+  height: 18px;
+}
+.icon-map {
+  mask-image: url("../img/svg/map.svg");
+  -webkit-mask-image: url("../img/svg/map.svg");
+  background-color: #ffffff;
+  width: 17px;
+  height: 35px;
+}
+.icon-message {
+  mask-image: url("../img/svg/message.svg");
+  -webkit-mask-image: url("../img/svg/message.svg");
+  background-color: #ffffff;
+  width: 18px;
+  height: 18px;
+}
+.icon-phoneCall {
+  mask-image: url("../img/svg/phoneCall.svg");
+  -webkit-mask-image: url("../img/svg/phoneCall.svg");
+  background-color: #ffffff;
+  width: 18px;
+  height: 18px;
+}
+#myBtn .backToTopImg {
+  transform: translate(10px, 14px);
+}
+#myBtn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 50px;
+  right: 30px;
+  position: fixed;
+  cursor: pointer;
+  z-index: 87;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 40px rgba(140, 140, 140, 0.25);
+  display: none;
+}
+
+.ourMastersSection .owl-dots .owl-dot:focus,
+.ourMastersSection .owl-dots .owl-dot:active {
+  outline: none;
+}
+.ourMastersSection .owl-dots {
+  display: flex;
+  justify-content: center;
+  transform: translate(0px, 90px);
+}
+
+.ourMastersSection .owl-dots .owl-dot {
+  padding: 6px !important;
+  margin-left: 3px;
+  margin-right: 3px;
+  background: #c4c4c4;
+  border-radius: 50%;
+}
+.ourMastersSection .owl-dots .owl-dot.active {
+  background: #fbdf7a;
+}
+
+.workResultsSectionRow .owl-dots .owl-dot:focus,
+.workResultsSectionRow .owl-dots .owl-dot:active {
+  outline: none;
+}
+.workResultsSectionRow .owl-dots {
+  display: flex;
+  justify-content: center;
+  transform: translate(0px, 20px);
+}
+.workResultsSectionRow .owl-dots .owl-dot {
+  padding: 6px !important;
+  margin-left: 3px;
+  margin-right: 3px;
+  background: #c4c4c4;
+  border-radius: 50%;
+}
+.workResultsSectionRow .owl-dots .owl-dot.active {
+  background: #fbdf7a;
+}
+
+/*headerMain section start*/
+.headerMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  border-bottom: 1px solid #5f5f5f;
+}
+
+.headerMain .headerMainLinks a:nth-child(2),
+a:nth-child(3),
+a:nth-child(4),
+a:nth-child(5),
+a:nth-child(6) {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.headerMain .headerMainLinks a {
+  text-decoration: none;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  color: #5f5f5f;
+}
+
+.headerMain .headerMainIcons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.headerMain .headerMainIcons div {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.headerMain .headerMainIcons a {
+  text-decoration: none;
+}
+
+.headerMain .headerMainIcons .headerMainIconsOne {
+  border-right: 1px solid #828998;
+}
+.headerMain .headerMainIcons2 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.headerMain .headerMainIcons2 div {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.headerMain .headerMainIcons2 a {
+  text-decoration: none;
+}
+
+.headerMain .headerMainIcons2 .headerMainIconsOne {
+  border-right: 1px solid #828998;
+}
+
+.headerMain .headerMainIcons22 {
+  display: none;
+}
+/*headerMain section end*/
+
+/*Navigation section start*/
+header .logo {
+  float: left;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 58px;
+  color: #fbdf7a;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-top: 8px;
+}
+
+.leftMenuLink {
+  padding-left: 20px;
+}
+
+.leftMenuLink li {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.rightMenuLink .contact {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #5f5f5f;
+}
+
+.rightMenuLink .callLink hr {
+  width: 70%;
+  height: 0.1px;
+  background: #e5c15f;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rightMenuLink .callLink {
+  background: none !important;
+  border: none !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #e5c15f;
+}
+.rightMenuLink .callLink:focus {
+  outline: none;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  color: #5f5f5f;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu-toggle i {
+  color: #000000;
+}
+
+.menu-toggle {
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.headerContainerr {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 991px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #333;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+  }
+
+  header nav.active {
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  header nav ul {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+/*Navigation section end*/
+
+/*Section One header start*/
+
+.sectionOneHeader {
+  margin-top: 104px;
+  background-image: url("../img/headerImg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 65% 456px;
+  height: 456px;
+}
+.sectionOneHeader .headerInfo .title {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 45px;
+  line-height: 55px;
+  color: #5f5f5f;
+  width: 390px;
+}
+.sectionOneHeader .headerInfo .description {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #5f5f5f;
+  width: 340px;
+  margin-top: 30px;
+}
+.sectionOneHeader .headerButton {
+  margin-top: 46px;
+  min-width: 100px;
+  padding: 25px 20px 25px 20px;
+  background: #fbdf7a;
+  transition: 0.3s;
+  border-radius: 50px;
+  border: none;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #313131;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sectionOneHeader .headerButton:focus,
+.headerButton:active {
+  outline: none;
+  border: none !important;
+}
+.sectionOneHeader .headerButton:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+.sectionOneHeader .headerArrow {
+  text-align: center;
+  margin-top: 20px;
+}
+.sectionOneHeader .headerArrow .description2 {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  color: #8e8e8e;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: right;
+  transform: translate(10%, -170%);
+}
+
+/*Section One header end*/
+
+/*Section Two => projects do we work => style start*/
+.projectWorksSection {
+  margin-top: 80px;
+}
+.projectWorksSection .projectWorksTitle {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 45px;
+  line-height: 55px;
+  text-align: center;
+  color: #5f5f5f;
+}
+.projectWorksBtnsGroup {
+  margin-top: 50px;
+  text-align: center;
+}
+.projectWorksBtnsGroup .subText {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 123.68%;
+  text-align: center;
+  color: #353535;
+}
+.projectWorksSection .projectWorksBtn {
+  width: 155px;
+  background: #bcbcbc;
+  border-radius: 50px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.3s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.projectWorksSection .projectWorksBtn:focus,
+.projectWorksBtn:active {
+  outline: none;
+  border: none !important;
+  background: #fbdf7a;
+}
+.projectWorksSection .projectWorksBtn:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  background: #fbdf7a;
+}
+/*Section Two => projects do we work => style end*/
+
+/*Section carouselOne start*/
+
+.carouselOne .owl-nav {
+  display: none;
+}
+.carouselOne .owl-dots {
+  display: none;
+}
+.carouselOne .carouselOneBtn {
+  background: #fbdf7a;
+  border-radius: 50px;
+  border: none;
+  transition: 0.3s;
+  width: 87%;
+  text-align: center;
+  height: 67px;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #323232;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.carouselOne .carouselOneImg {
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.carouselOne .carouselOneBtn:focus,
+.carouselOneBtn:active {
+  outline: none;
+  border: none !important;
+}
+.carouselOne .carouselOneBtn:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+.carouselOne .owl-carousel .owl-stage-outer {
+  padding-bottom: 10px;
+}
+/*Section carouselOne end*/
+
+/*profitableWorkSection start*/
+.profitableWorkSection .title {
+  text-align: center;
+  margin-top: 85px;
+  margin-bottom: 72px;
+}
+.profitableWorkSection .title,
+.span {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 45px;
+  line-height: 55px;
+  color: #5f5f5f;
+  text-transform: uppercase;
+}
+.profitableWorkSection .title span {
+  color: #fbdf7a;
+}
+.profitableWorkRow .colOne .colOneTitle {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #474747;
+  margin-bottom: 6px;
+}
+.profitableWorkRow .colOne .colOneDescription {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #474747;
+  margin-bottom: 40px;
+}
+.profitableWorkRow .colOne .bubble {
+  padding: 13px;
+  border-radius: 50%;
+  background: #fbdf7a;
+  margin-right: 23px;
+  height: 65px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*profitableWorkSection end*/
+
+/*Work results section start*/
+.workResultsSection .title {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 45px;
+  line-height: 55px;
+  color: #5f5f5f;
+  text-align: center;
+  margin-top: 6px;
+}
+.workResultsSection .owl-carousel .owl-nav button.owl-prev:focus,
+.owl-nav button.owl-next:focus {
+  outline: none !important;
+}
+.workResultsSection .owl-carousel .owl-nav button.owl-prev {
+  z-index: 2;
+  margin-left: -35px;
+}
+.workResultsSection .owl-carousel .owl-nav .owl-prev,
+.owl-next {
+  position: relative;
+}
+.workResultsSection .owl-carousel .owl-nav .owl-prev:after {
+  content: url("../img/svg/arrowLeft.svg");
+  position: absolute;
+  left: -20px;
+  top: -5px;
+  background: #ffffff;
+}
+.workResultsSection .owl-carousel .owl-nav button.owl-next {
+  z-index: 2;
+  margin-right: -35px;
+}
+
+.workResultsSection .owl-carousel .owl-nav .owl-next:after {
+  content: url("../img/svg/arrowRight.svg");
+  position: absolute;
+  right: -20px;
+  top: -5px;
+  background: #ffffff;
+}
+.workResultsSection .owl-carousel .owl-stage {
+  z-index: 1;
+}
+
+.workResultsSection .owl-carousel.owl-drag .owl-item {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.workResultsSection .owl-carousel .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+}
+.workResultsSection .owl-carousel {
+  margin-top: 80px;
+}
+/*Work results section end*/
+
+/*About company section start*/
+.aboutCompany {
+  background: #fcfcfc;
+}
+.aboutCompanyCol1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.aboutCompany .companyTitle {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 45px;
+  line-height: 55px;
+  color: #5f5f5f;
+}
+.aboutCompany .companyDescription {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 133.1%;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+.aboutCompanyHeader {
+  margin-bottom: 40px;
+}
+.aboutCompanyHeader .companyBtn1Main {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.frequentlyQuestionsSection .questionsBtn,
+.aboutCompanyHeader .companyBtn1,
+.aboutCompany .companyBtn2 {
+  background: #fbdf7a;
+  border-radius: 41px;
+  border: none;
+  transition: 0.3s;
+  padding: 6px 20px 6px 20px;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #4a473a;
+}
+.aboutCompanyHeader .companyBtn1:focus,
+.companyBtn1:active,
+.frequentlyQuestionsSection .questionsBtn:focus,
+.questionsBtn:active,
+.aboutCompany .companyBtn2:focus,
+.companyBtn2:active {
+  outline: none;
+  border: none !important;
+}
+.frequentlyQuestionsSection .questionsBtn:hover,
+.aboutCompanyHeader .companyBtn1:hover,
+.aboutCompany .companyBtn2:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+.companyUserImg {
+  width: 287px;
+  height: 439px;
+}
+.companyUserInfo {
+  margin-right: 10px;
+}
+.companyUserInfo .userName {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 133.1%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.companyUserInfo .userPosition {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 133.1%;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.companyUserInfoMain {
+  width: 100%;
+  justify-content: center;
+}
+/*About company section end*/
+
+/*Our Masters section start*/
+.ourMastersSection .mastersInfoMain {
+  border-right: 1px solid #474747;
+}
+.ourMastersSection .masters .masterFullName {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #474747;
+  margin-bottom: 10px;
+}
+.ourMastersSection .masters .masterInfo {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #474747;
+}
+.ourMastersSection .masters img {
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin-bottom: 17px;
+}
+.ourMastersSection .mastersTitle {
+  margin-bottom: 70px;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 46px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #5f5f5f;
+}
+.ourMastersSection {
+  background-image: url(../img/mastersBacground1.png),
+    url(../img/mastersBacground2.png);
+  background-position: center 361px, center 390px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 96% auto, 100% auto;
+}
+.ourMastersSection {
+  margin-top: 110px;
+  padding-bottom: 120px;
+}
+.ourMastersSection .owl-nav {
+  display: none !important;
+}
+/*Our Masters section end*/
+
+/*Frequently asked Questions start*/
+.frequentlyQuestionsSection {
+  margin-top: 100px;
+}
+.frequentlyQuestionsSection .questionsTitle {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 41px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5f5f5f;
+}
+
+.frequentlyQuestionsSection .accordionCardHeader .title {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 127.9%;
+  text-transform: uppercase;
+  color: #afafaf;
+}
+.frequentlyQuestionsSection .accordion {
+  margin-top: 58px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.accordionCardHeader .accicon {
+  float: right;
+  font-size: 20px;
+}
+.accordionCardHeader {
+  cursor: pointer;
+  border-bottom: none;
+  background: transparent;
+}
+.accordionCard {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  background: #fcfcfc;
+  box-shadow: 0px 0px 40px rgba(140, 140, 140, 0.25);
+  border-radius: 50px !important;
+}
+.accordionCardBody {
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #474747;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px !important;
+}
+.accordionCardHeader {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.accordionCardHeader .rotate-icon {
+  transition: 0.5s;
+  margin-top: -7px;
+}
+.accordionCardHeader:not(.collapsed) .rotate-icon {
+  transition: 0.5s;
+  transform: rotate(90deg);
+}
+.accordionCardHeader .acciconMain {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fbdf7a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Frequently asked Questions end*/
+
+/*Need a consultation section start*/
+.needConsultationSection {
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+.needConsultationSection .needConsultationContainer {
+  padding-top: 30px;
+  background: #fcfcfc;
+  position: relative;
+}
+.needConsultationSection .infoConsultationCol1 {
+  padding-left: 34px;
+}
+.needConsultationSection .consult-sofa-main {
+  position: absolute;
+  bottom: -42px;
+  z-index: 1;
+  right: 26px;
+}
+.needConsultationSection .infoConsultationFlex {
+  margin-right: 30px;
+}
+.needConsultationSection .consult-smiling {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  z-index: 2;
+}
+.needConsultationSection .titleConsultation {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 40px;
+  line-height: 56px;
+  color: #5f5f5f;
+}
+.needConsultationSection .descriptionConsultation {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  color: #5f5f5f;
+}
+.needConsultationSection .btnConsultation {
+  background: #fbdf7a;
+  border-radius: 50px;
+  padding: 10px 33px 10px 33px;
+  border: none;
+  transition: 0.3s;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 20px;
+  color: #313131;
+  margin-top: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.needConsultationSection .btnConsultation:focus,
+.btnConsultation:active {
+  outline: none;
+  border: none !important;
+}
+.needConsultationSection .btnConsultation:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+/*Need a consultation section end*/
+
+/*Footer section start*/
+.footerSection {
+  background: #afafaf;
+  padding-top: 109px;
+  padding-bottom: 183px;
+}
+.footerSection .footerFlex .footerLogo {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footerSection .footerFlex .footerDescription {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 117.7%;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.footerSection .footerFlex .footerDescription span {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 117.7%;
+  color: #ffffff;
+  text-transform: lowercase;
+}
+.footerSection .footerFlex {
+  display: flex;
+  justify-content: flex-end;
+}
+.footerSection .footerTitle {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 28px;
+  line-height: 130%;
+  color: #fdfdfd;
+}
+.footerSection .footerContactIcons {
+  margin-bottom: 4px;
+}
+.footerSection .footerContactIcons span {
+  margin-left: 4px;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+  color: #fdfdfd;
+}
+
+.footerSectionSub {
+  background: #fbdf7a;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.footerSectionSub .footerSubTitle {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fdfdfd;
+}
+/*Footer section end*/
+
+@media (min-width: 1500px) {
+  .sectionOneHeader .headerArrow {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-left: 152px;
+  }
+  .sectionOneHeader .headerArrow .description2 {
+    text-align: left;
+    transform: translate(0%, -20px);
+    padding-left: 70px;
+  }
+}
+@media (max-width: 1500px) and (min-width: 1200px) {
+  .sectionOneHeader .headerArrow {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-left: 152px;
+  }
+  .sectionOneHeader .headerArrow .description2 {
+    text-align: left;
+    transform: translate(0%, -20px);
+    padding-left: 70px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+  .ourMastersSection .owl-dots {
+    transform: translate(0px, 50px);
+  }
+
+  /*Section One header start*/
+
+  .sectionOneHeader .headerButton {
+    margin-top: 35px;
+    min-width: 100px;
+    padding: 10px 20px 10px 20px;
+    font-size: 9px;
+    line-height: 24px;
+  }
+  .sectionOneHeader .headerButton {
+    padding: 18px 20px 18px 20px;
+    font-size: 15px;
+  }
+  .sectionOneHeader .headerArrow {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-left: 152px;
+  }
+  .sectionOneHeader .headerArrow .description2 {
+    text-align: left;
+    transform: translate(0%, -20px);
+    padding-left: 70px;
+  }
+  .sectionOneHeader {
+    margin-top: 74px;
+    background-image: url(../img/headerImg.png);
+    background-repeat: no-repeat;
+    background-position: right 35px;
+    background-size: 67% 390px;
+    height: 456px;
+  }
+  /*Section One header end*/
+
+  /*Work results section start*/
+  .workResultsSection .owl-carousel .owl-nav {
+    display: none;
+  }
+  .workResultsSection .workResultsSectionRow {
+    margin-left: 0;
+  }
+  .workResultsSection .owl-carousel.owl-drag .owl-item {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .workResultsSection .owl-carousel {
+    margin-top: 30px;
+  }
+  /*Work results section end*/
+
+  /*Our Masters section start*/
+  .ourMastersSection {
+    background-position: center 376px, center 390px;
+  }
+  /*Our Masters section end*/
+
+  /*Frequently asked Questions start*/
+  .frequentlyQuestionsSection .questionsTitle {
+    font-size: 36px;
+  }
+  /*Frequently asked Questions end*/
+
+  /*Footer section start*/
+  .footerSection {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+  /*Footer section end*/
+  .workResultsSectionRow .owl-dots {
+    transform: translate(0px, 0px);
+  }
+  .aboutCompanyHeader {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 992px) and (min-width: 765px) {
+  .ourMastersSection .owl-dots {
+    transform: translate(0px, 50px);
+  }
+  .aboutCompanyHeader {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /*Navigation start*/
+  .headerMain .headerMainLinks a {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  /*Navigation end*/
+
+  /*Section One header start*/
+  .sectionOneHeader .headerInfo .title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .sectionOneHeader .headerInfo .description {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+  .sectionOneHeader .headerButton {
+    margin-top: 35px;
+    min-width: 100px;
+    padding: 10px 20px 10px 20px;
+    font-size: 9px;
+    line-height: 24px;
+  }
+  .sectionOneHeader .headerButton {
+    padding: 18px 20px 18px 20px;
+    font-size: 15px;
+  }
+  .sectionOneHeader .headerArrow {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-left: 152px;
+  }
+  .sectionOneHeader .headerArrow .description2 {
+    text-align: left;
+    transform: translate(0%, -20px);
+    padding-left: 70px;
+  }
+  .sectionOneHeader {
+    margin-top: 74px;
+    background-image: url(../img/headerImg.png);
+    background-repeat: no-repeat;
+    background-position: right 0px;
+    background-size: 57% 340px;
+    height: auto;
+  }
+  /*Section One header end*/
+
+  /*Work results section start*/
+  .workResultsSection .owl-carousel .owl-nav {
+    display: none;
+  }
+  .workResultsSection .workResultsSectionRow {
+    margin-left: 0;
+  }
+  .workResultsSection .owl-carousel.owl-drag .owl-item {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .workResultsSection .owl-carousel {
+    margin-top: 30px;
+  }
+  /*Work results section end*/
+
+  /*Our Masters section start*/
+  .ourMastersSection .mastersTitle {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .ourMastersSection {
+    background-position: center 341px, center 359px;
+  }
+  .ourMastersSection .mastersInfoMain {
+    border-right: none;
+  }
+  .ourMastersSection {
+    margin-top: 80px;
+    padding-bottom: 90px;
+  }
+  /*Our Masters section end*/
+
+  /*Frequently asked Questions start*/
+  .frequentlyQuestionsSection .questionsTitle {
+    font-size: 40px;
+    line-height: 46px;
+    text-align: left;
+  }
+  .frequentlyQuestionsSection .questionsBtn {
+    margin-top: 20px;
+  }
+  .questionsFlex {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
+  .frequentlyQuestionsSection .accordion {
+    margin-top: 58px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .accordionCardHeader .acciconMain {
+    width: 35px;
+    height: 35px;
+  }
+  .accordionCardBody {
+    padding-top: 0px !important;
+    padding-bottom: 25px;
+  }
+  .frequentlyQuestionsSection {
+    margin-top: 70px;
+  }
+  /*Frequently asked Questions end*/
+
+  /*Footer section start*/
+  .footerSection {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  /*Footer section end*/
+  .workResultsSectionRow .owl-dots {
+    transform: translate(0px, 0px);
+  }
+}
+
+@media (max-width: 765px) and (min-width: 576px) {
+  .ourMastersSection .owl-dots {
+    transform: translate(0px, 20px);
+  }
+  .aboutCompanyHeader {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /*Navigation start*/
+  .headerMain .headerMainLinks a {
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+  }
+  /*Navigation end*/
+
+  /*Section One header start*/
+  .sectionOneHeader .headerInfo .title {
+    font-size: 30px;
+    line-height: 36px;
+    width: auto;
+  }
+  .sectionOneHeader .headerInfo .description {
+    font-size: 16px;
+    line-height: 24px;
+    width: auto;
+    margin-top: 15px;
+  }
+  .sectionOneHeader .headerButton {
+    margin-top: 35px;
+    min-width: 100px;
+    padding: 10px 20px 10px 20px;
+    font-size: 9px;
+    line-height: 24px;
+  }
+  .sectionOneHeader .headerArrow {
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 0px;
+    padding-left: 82px;
+  }
+  .sectionOneHeader .headerArrow .description2 {
+    text-align: left;
+    transform: translate(0%, -20px);
+    padding-left: 70px;
+  }
+  .sectionOneHeader {
+    background-image: none;
+  }
+  .sectionOneHeader {
+    margin-top: 104px;
+    height: auto;
+  }
+  /*Section One header end*/
+
+  /*projectWorksSection start*/
+  .profitableWorkSection .title {
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 42px;
+  }
+  /*projectWorksSection end*/
+
+  /*Work results section start*/
+  .workResultsSection .owl-carousel .owl-nav {
+    display: none;
+  }
+  .workResultsSection .workResultsSectionRow {
+    margin-left: 0;
+  }
+  .workResultsSection .owl-carousel.owl-drag .owl-item {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .workResultsSection .title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .workResultsSection .owl-carousel {
+    margin-top: 30px;
+  }
+  /*Work results section end*/
+
+  /*Our Masters section start*/
+  .ourMastersSection .mastersTitle {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .ourMastersSection {
+    background-image: none;
+  }
+  .ourMastersSection .mastersInfoMain {
+    border-right: none;
+  }
+  .ourMastersSection .masters img {
+    height: 200px;
+    width: 200px;
+  }
+  .ourMastersSection {
+    margin-top: 80px;
+    padding-bottom: 90px;
+  }
+  /*Our Masters section end*/
+
+  /*Frequently asked Questions start*/
+  .frequentlyQuestionsSection .questionsTitle {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: left;
+  }
+  .frequentlyQuestionsSection .questionsBtn {
+    margin-top: 20px;
+  }
+  .frequentlyQuestionsSection .questionsBtn,
+  .aboutCompanyHeader .companyBtn1,
+  .aboutCompany .companyBtn2 {
+    font-size: 15px;
+  }
+  .questionsFlex {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
+  .frequentlyQuestionsSection .accordion {
+    margin-top: 58px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .accordionCardHeader {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .frequentlyQuestionsSection .accordionCardHeader .title {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .accordionCardHeader .acciconMain {
+    width: 35px;
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .accordionCardBody {
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px !important;
+    padding-bottom: 25px;
+  }
+  .frequentlyQuestionsSection {
+    margin-top: 70px;
+  }
+  /*Frequently asked Questions end*/
+
+  /*Footer section start*/
+  .footerSection {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footerSectionSub .footerSubTitle {
+    padding-left: 15px;
+  }
+  .footerSection .footerFlex {
+    display: flex;
+    justify-content: flex-start;
+  }
+  /*Footer section end*/
+  .workResultsSectionRow .owl-dots {
+    transform: translate(0px, 0px);
+  }
+}
+@media only screen and (max-width: 576px) and (min-width: 320px) {
+  .ourMastersSection .owl-dots {
+    transform: translate(0px, 20px);
+  }
+  .aboutCompanyHeader {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /*Navigation start*/
+  .headerMain .headerMainLinks a {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+  /*Navigation end*/
+
+  /*Section One header start*/
+  .sectionOneHeader .headerInfo .title {
+    font-size: 30px;
+    line-height: 36px;
+    width: auto;
+  }
+  .sectionOneHeader .headerInfo .description {
+    font-size: 16px;
+    line-height: 24px;
+    width: auto;
+    margin-top: 15px;
+  }
+  .sectionOneHeader .headerButton {
+    margin-top: 35px;
+    min-width: 100px;
+    padding: 10px 20px 10px 20px;
+    font-size: 9px;
+    line-height: 24px;
+  }
+  .sectionOneHeader .headerArrow {
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 0px;
+    padding-left: 82px;
+  }
+  .sectionOneHeader .headerArrow .description2 {
+    text-align: left;
+    transform: translate(0%, -20px);
+    padding-left: 70px;
+  }
+  .sectionOneHeader {
+    background-image: none;
+  }
+  .sectionOneHeader {
+    margin-top: 104px;
+    height: auto;
+  }
+  /*Section One header end*/
+
+  /*projectWorksSection start*/
+  .projectWorksSection .projectWorksTitle {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  /*projectWorksSection end*/
+
+  /*carouselOne start*/
+  .carouselOne .owl-nav {
+    display: none;
+  }
+  .carouselOne .carouselOneBtn {
+    width: 87%;
+    height: 50px;
+    font-size: 14px;
+  }
+  /*carouselOne end*/
+
+  /*projectWorksSection start*/
+  .profitableWorkSection .title,
+  .span {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .profitableWorkSection .title {
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 42px;
+  }
+  /*projectWorksSection end*/
+
+  /*Work results section start*/
+  .workResultsSection .owl-carousel .owl-nav {
+    display: none;
+  }
+  .workResultsSection .workResultsSectionRow {
+    margin-left: 0;
+  }
+  .workResultsSection .owl-carousel.owl-drag .owl-item {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .workResultsSection .title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .workResultsSection .owl-carousel {
+    margin-top: 30px;
+  }
+  /*Work results section end*/
+
+  /*About company section start*/
+  .aboutCompany .companyTitle {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .companyUserImg {
+    width: 287px;
+    height: 300px;
+    object-fit: fill;
+  }
+  /*About company section end*/
+
+  /*Our Masters section start*/
+  .ourMastersSection .mastersTitle {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .ourMastersSection {
+    background-image: none;
+  }
+  .ourMastersSection .mastersInfoMain {
+    border-right: none;
+  }
+  .ourMastersSection .masters img {
+    height: 200px;
+    width: 200px;
+  }
+  .ourMastersSection {
+    margin-top: 80px;
+    padding-bottom: 90px;
+  }
+  /*Our Masters section end*/
+
+  /*Frequently asked Questions start*/
+  .frequentlyQuestionsSection .questionsTitle {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: left;
+  }
+  .frequentlyQuestionsSection .questionsBtn {
+    margin-top: 20px;
+  }
+  .frequentlyQuestionsSection .questionsBtn,
+  .aboutCompanyHeader .companyBtn1,
+  .aboutCompany .companyBtn2 {
+    font-size: 15px;
+  }
+  .questionsFlex {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
+  .frequentlyQuestionsSection .accordion {
+    margin-top: 58px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .accordionCardHeader {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .frequentlyQuestionsSection .accordionCardHeader .title {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .accordionCardHeader .acciconMain {
+    width: 35px;
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .accordionCardBody {
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px !important;
+    padding-bottom: 25px;
+  }
+  .frequentlyQuestionsSection {
+    margin-top: 70px;
+  }
+  /*Frequently asked Questions end*/
+
+  /*Need a consultation section start*/
+  .needConsultationSection .consult-smiling {
+    position: relative;
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    z-index: 2;
+  }
+  .needConsultationSection .infoConsultationFlex > div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .needConsultationSection .titleConsultation {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .needConsultationSection .btnConsultation {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .needConsultationSection {
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+  /*Need a consultation section end*/
+
+  /*Footer section start*/
+  .footerSection {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footerSectionSub .footerSubTitle {
+    padding-left: 15px;
+  }
+  .footerSection .footerFlex {
+    display: flex;
+    justify-content: flex-start;
+  }
+  /*Footer section end*/
+
+  .workResultsSectionRow .owl-dots {
+    transform: translate(0px, 0px);
+  }
+}
+@media (max-width: 991px) {
+  .headerMain .headerMainLinks {
+    display: none;
+  }
+  .needConsultationSection .infoConsultationCol1 {
+    padding-left: 15px;
+  }
+  .headerMain .headerMainIcons {
+    display: none;
+  }
+  .headerMain .headerMainIcons22 {
+    display: block;
+  }
+
+  .headerIconsMain {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .headerMain .headerMainLinks {
+    display: none;
+  }
+}
+
+@media (max-width: 1900px) and (min-width: 1700px) {
+  .ourMastersSection {
+    background-size: 96% 153px, 100% 160px;
+  }
+}
+@media (max-width: 2100px) and (min-width: 1900px) {
+  .ourMastersSection {
+    background-size: 98% 153px, 100% 160px;
+  }
+}
+@media (max-width: 2400px) and (min-width: 2100px) {
+  .ourMastersSection {
+    background-size: 99% 153px, 100% 160px;
+  }
+}
+@media (max-width: 2800px) and (min-width: 2400px) {
+  .ourMastersSection {
+    background-size: 99% 153px, 100% 160px;
+  }
+}
+
+/* MODAL */
+
+.modelBack {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container_modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  opacity: 0;
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+  transition: all 0.5s ease;
+  display: flex;
+}
+.main-modal {
+  position: absolute;
+  border-radius: 10px;
+  padding: 20px 0;
+  width: 350px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.closeXButton {
+  text-align: center;
+  width: 250px;
+  margin-top: 10px;
+}
+.closeIconModal {
+  padding: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  cursor: pointer;
+}
+
+.modalInputs {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+}
+.modalInputs {
+  border: 1px solid #aaa;
+}
+.modalInputs[type="text"]:focus {
+  outline: none !important;
+}
+textarea:focus {
+  outline: none !important;
+}
+::placeholder {
+  color: #999;
+  font-family: sans-serif;
+}
+.modalButton {
+  background-color: #fedc45ff;
+  width: 250px;
+  border-radius: 50px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  box-shadow: 0 5px 1px #ddd;
+  font-size: 14px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  .main-modal {
+    width: 280px;
+    height: 70%;
+  }
+}
